@@ -23,6 +23,7 @@ class Answer(VideoBase):
 
     def build(self) -> VideoClip:
         pokemonNameText = self.pokemonNameText.build()
+        pokemonNameText = pokemonNameText.set_position(("center", "bottom"))
         pokemonNameText = margin(
             clip = pokemonNameText, 
             bottom = 175,
