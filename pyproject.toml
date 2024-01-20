@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wtp"
+version = "0.1.0"
+description = ""
+authors = ["pab-h <dev.pab.2020@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+moviepy = "^1.0.3"
+pillow = "^10.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
