@@ -12,7 +12,7 @@ from wtp.components.base import VideoBase
 from wtp.components.background import Background
 from wtp.components.audio.pokename import PokeNameAudio
 
-class Question(VideoBase):
+class Answer(VideoBase):
     def __init__(self, pokemon: Pokemon) -> None:
         super().__init__()
 
@@ -30,7 +30,6 @@ class Question(VideoBase):
         )
 
         pokemonImage = ImageClip(self.pokemon.sprite)
-        pokemonImage = pokemonImage.resize(10)
         pokemonImage = pokemonImage.set_position(("center", "center"))
 
         video = CompositeVideoClip([
