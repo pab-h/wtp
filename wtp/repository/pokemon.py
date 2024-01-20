@@ -43,9 +43,8 @@ class PokemonRepository:
         return filename
 
     def getRandom(self) -> Pokemon:
-        # randomId = int(random() * self.amout)
-        randomId = 1
-
+        randomId = int(random() * self.amout)
+        
         pokemonSprite = pb.SpriteResource('pokemon', randomId)
         pokemon = pb.pokemon(randomId)
 
