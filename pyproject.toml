@@ -10,6 +10,7 @@ python = "^3.12"
 moviepy = "^1.0.3"
 pillow = "^10.2.0"
 gtts = "^2.5.0"
+pokebase = "^1.4.1"
 
 
 [build-system]
