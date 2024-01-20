@@ -39,7 +39,6 @@ class Question(VideoBase):
         )
 
         pokemonShadow = ImageClip(self.pokemon.spriteShadow)
-        pokemonShadow = pokemonShadow.resize(10)
         pokemonShadow = pokemonShadow.set_position(("center", "center"))
 
         video = CompositeVideoClip([
